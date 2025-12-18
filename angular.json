@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "49d734c9-5907-47d9-a22e-0a42f8b67c90"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -24,9 +25,9 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": ["src/styles.css", "node_modules/bootstrap/dist/css/bootstrap.min.css"],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
+
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
